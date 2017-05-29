@@ -1,0 +1,21 @@
+.ryoko {
+  background-size: cover;
+  background-position: center;
+  min-height: 40vmin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.ryoko-content {
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black; }
+
+/*# sourceMappingURL=ryoko.css.map */

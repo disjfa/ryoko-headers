@@ -1,0 +1,32 @@
+{
+  "name": "ryoko-headers",
+  "version": "0.1.1",
+  "description": "Simple admin template using wonderful styles",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install; grunt",
+    "watch": "grunt serve",
+    "serve": "grunt jekyll",
+    "add": "all-contributors add",
+    "generate": "all-contributors generate"
+  },
+  "author": "Disjfa",
+  "license": "MIT",
+  "devDependencies": {
+    "all-contributors-cli": "^4.3.0",
+    "autoprefixer": "^7.1.1",
+    "cssnano": "^3.10.0",
+    "grunt": "^1.0.1",
+    "grunt-build-control": "^0.7.1",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-util": "^3.0.8"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0-alpha.5",
+    "bootstrap-social": "^5.0.0",
+    "font-awesome": "^4.6.3"
+  }
+}
