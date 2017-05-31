@@ -1,4 +1,5 @@
 .ryoko {
+  background-color: #bdc3c7;
   background-size: cover;
   background-position: center;
   min-height: 40vmin;
@@ -12,10 +13,41 @@
       -ms-flex-align: center;
           align-items: center; }
 
-.ryoko-content {
-  background: rgba(0, 0, 0, 0.5);
-  position: relative;
+.ryoko-faded {
+  background: rgba(0, 0, 0, 0.5); }
+
+.ryoko-shadow {
   -webkit-box-shadow: 0 0 10px black;
           box-shadow: 0 0 10px black; }
+
+.ryoko-10 {
+  min-height: 10vmin; }
+
+.ryoko-20 {
+  min-height: 20vmin; }
+
+.ryoko-30 {
+  min-height: 30vmin; }
+
+.ryoko-40 {
+  min-height: 40vmin; }
+
+.ryoko-50 {
+  min-height: 50vmin; }
+
+.ryoko-60 {
+  min-height: 60vmin; }
+
+.ryoko-70 {
+  min-height: 70vmin; }
+
+.ryoko-80 {
+  min-height: 80vmin; }
+
+.ryoko-90 {
+  min-height: 90vmin; }
+
+.ryoko-100 {
+  min-height: 100vmin; }
 
 /*# sourceMappingURL=ryoko.css.map */
