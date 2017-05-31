@@ -18,16 +18,6 @@ gulp.task('css', function () {
     .pipe(gulp.dest('site/css'))
 })
 
-gulp.task('bootstrap', function () {
-  gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.*')
-    .pipe(gulp.dest('site/css'))
-})
-
-gulp.task('purecss', function () {
-  gulp.src('node_modules/purecss/build/pure-min.css')
-    .pipe(gulp.dest('site/css'))
-})
-
 const child = require('child_process')
 const gutil = require('gulp-util')
 const jekyllLogger = function (buffer) {
@@ -50,7 +40,33 @@ gulp.task('jekyll', function () {
 })
 
 gulp.task('watch', function () {
-  gulp.watch('./scss/ryoko.scss', ['css'])
+  gulp.watch('./scss/**/*.scss', ['css'])
 })
 
+gulp.task('bootstrap-css', function () {
+  gulp.src('node_modules/bootstrap/dist/css/bootstrap.min.*')
+    .pipe(gulp.dest('site/css'))
+})
+
+gulp.task('bootstrap-js', function () {
+  gulp.src('node_modules/bootstrap/dist/js/bootstrap.min.js')
+    .pipe(gulp.dest('site/js'))
+})
+
+gulp.task('jquery-js', function () {
+  gulp.src('node_modules/jquery/dist/jquery.slim.min.js')
+    .pipe(gulp.dest('site/js'))
+})
+
+gulp.task('tether-js', function () {
+  gulp.src('node_modules/tether/dist/js/tether.min.js')
+    .pipe(gulp.dest('site/js'))
+})
+
+gulp.task('bulma-css', function () {
+  gulp.src('node_modules/bulma/css/bulma.*')
+    .pipe(gulp.dest('site/css'))
+})
+
+gulp.task('copy', ['bootstrap-css', 'bootstrap-js', 'jquery-js', 'tether-js', 'bulma-css'])
 gulp.task('default', ['css', 'jekyll', 'watch'])

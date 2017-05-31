@@ -10,18 +10,29 @@
 
     <link rel="stylesheet" href="{{ "/css/bootstrap.min.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/ryoko.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/highlight.css" | prepend: site.baseurl }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
 <body>
-<nav class="navbar navbar-inverse bg-primary">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            {{ site.title }}
-        </a>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+        {{ site.title }}
+    </a>
+    <div class="collapse navbar-collapse" id="navbar-main">
+        <ul class="navbar-nav mr-auto">
+            {% include menu-bootstrap.html group='main' %}
+        </ul>
     </div>
 </nav>
 {{ content }}
+{% include footer.html %}
+<script src="{{ "/js/jquery.slim.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/tether.min.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/bootstrap.min.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

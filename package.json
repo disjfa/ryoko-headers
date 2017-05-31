@@ -4,9 +4,7 @@
   "description": "Simple admin template using wonderful styles",
   "main": "index.js",
   "scripts": {
-    "build": "npm install; grunt",
-    "watch": "grunt serve",
-    "serve": "grunt jekyll",
+    "dev": "gulp",
     "add": "all-contributors add",
     "generate": "all-contributors generate"
   },
@@ -26,7 +24,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.0.0-alpha.5",
-    "bootstrap-social": "^5.0.0",
-    "font-awesome": "^4.6.3"
+    "bulma": "^0.4.2",
+    "font-awesome": "^4.6.3",
+    "jquery": "^3.2.1",
+    "tether": "^1.4.0"
   }
 }

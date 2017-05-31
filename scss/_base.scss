@@ -1,0 +1,27 @@
+.ryoko {
+  background-color: $ryoko-background;
+  background-size: cover;
+  background-position: center;
+  min-height: $ryoko-default-height;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ryoko-faded {
+  background: $ryoko-faded-background;
+}
+
+.ryoko-shadow {
+  box-shadow: $ryoko-shadow;
+}
+
+@mixin make-ryoko-sizes($sizes: $ryoko-sizes) {
+  @each $size in map-keys($sizes) {
+    .ryoko-#{$size} {
+      min-height: #{$size}vmin;
+    }
+  }
+}
+
+@include make-ryoko-sizes();

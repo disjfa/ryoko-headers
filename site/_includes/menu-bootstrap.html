@@ -1,0 +1,27 @@
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% for my_page in sorted_pages %}
+    {% if my_page.title %}
+        {% if my_page.group == include.group %}
+            {% if my_page.menu %}
+                {% assign my_submenu = false %}
+                {% if page.url contains my_page.url %}
+                    {% assign my_submenu = true %}
+                {% endif %}
+                <li class="nav-item dropdown{% if my_submenu %} active{% endif %}">
+                    <a class="nav-link dropdown-toggle" id="menu-{{ my_page.menu }}" href="{{ my_page.url | prepend: site.baseurl }}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{ my_page.title }}</a>
+                    <ul class="dropdown-menu{% if my_submenu %} in{% endif %}" aria-labelledby="menu-{{ my_page.menu }}">
+                        {% include menu-bootstrap.html group=my_page.menu %}
+                    </ul>
+                </li>
+            {% else %}
+                {% if include.group == 'main' %}
+                    <li class="nav-item{% if my_page.url == page.url %} active{% endif %}">
+                        <a class="nav-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                    </li>
+                {% else %}
+                    <a class="dropdown-item{% if my_page.url == page.url %} active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}

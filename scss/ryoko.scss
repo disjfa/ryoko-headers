@@ -1,14 +1,2 @@
-.ryoko {
-  background-size: cover;
-  background-position: center;
-  min-height: 40vmin;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.ryoko-content {
-  background: rgba(0, 0, 0, .5);
-  position: relative;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
-}
+@import "variables";
+@import "base";

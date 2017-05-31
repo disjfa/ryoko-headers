@@ -1,0 +1,20 @@
+{% assign sorted_pages = site.pages | sort:"order" %}
+{% for my_page in sorted_pages %}
+    {% if my_page.title %}
+        {% if my_page.group == include.group %}
+            {% if my_page.menu %}
+                {% assign my_submenu = false %}
+                {% if page.url contains my_page.url %}
+                    {% assign my_submenu = true %}
+                {% endif %}
+                <a class="nav-item is-tab{% if my_submenu %} is-active{% endif %}" id="menu-{{ my_page.menu }}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            {% else %}
+                {% if include.group == 'main' %}
+                    <a class="nav-item is-tab{% if my_page.url == page.url %} is-active{% endif %}" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                {% else %}
+
+                {% endif %}
+            {% endif %}
+        {% endif %}
+    {% endif %}
+{% endfor %}
