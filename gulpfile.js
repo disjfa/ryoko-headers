@@ -68,5 +68,15 @@ gulp.task('bulma-css', function () {
     .pipe(gulp.dest('site/css'))
 })
 
-gulp.task('copy', ['bootstrap-css', 'bootstrap-js', 'jquery-js', 'tether-js', 'bulma-css'])
+gulp.task('material-design-lite-css', function () {
+  gulp.src(['node_modules/material-design-lite/material.min.css', 'node_modules/material-design-lite/material.min.css.map'])
+    .pipe(gulp.dest('site/css'))
+})
+
+gulp.task('material-design-lite-js', function () {
+  gulp.src(['node_modules/material-design-lite/material.min.js', 'node_modules/material-design-lite/material.min.js.map'])
+    .pipe(gulp.dest('site/js'))
+})
+
+gulp.task('copy', ['bootstrap-css', 'bootstrap-js', 'jquery-js', 'tether-js', 'bulma-css', 'material-design-lite-css', 'material-design-lite-js'])
 gulp.task('default', ['css', 'jekyll', 'watch'])

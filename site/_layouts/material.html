@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{ "/css/material.min.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/ryoko.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ "/css/highlight.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
+<body>
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">{{ site.title }}</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation">
+                {% include menu-material.html group='main' %}
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">{{ site.title }}</span>
+        <nav class="mdl-navigation">
+            {% include menu-material.html group='main' %}
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        {{ content }}
+    </main>
+</div>
+{% include footer.html %}
+<script src="{{ "/js/material.min.js" | prepend: site.baseurl }}"></script>
+</body>
+</html>
