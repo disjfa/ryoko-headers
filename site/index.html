@@ -8,10 +8,18 @@ order: 1
 
 {% include_relative index_example.html %}
 <div class="container py-3">
-    <h1>Headers? Why</h1>
+    <h2>Headers? Why</h2>
     <p class="lead">On the internet there are millions of headers. Easy, hard, customized, buildable. Let's make this easy to use. Just add this on your site:</p>
     {% highlight html %}{% include_relative index_example.html %}{% endhighlight %}
     <p>This is the code for the header above. Just a div and some content. Why do we want more.</p>
     <p>We use a simple example of a <code>vmin</code> for a <code>height</code>, this is 1/100th of the smallest side of your viewport. Ryoko uses 40/100th of the smallest side of your viewport by default, this scales awesome of your desktop, and your mobile. It also uses the <code>min-height</code>, so if you have more info... fine! Want another size, <a href="{{ '/sizing' | prepend: site.baseurl }}">can do</a>. Just keep in mind to create something cool.</p>
-    <a href="{{ '/getting-started' | prepend: site.baseurl }}" class="btn btn-primary">get started</a>
+
+    <h2>Installing</h2>
+    <p>Installing is just as easy as installing another npm package, just do this.</p>
+    <h3>npm</h3>
+    <p>Add it to your dependencies.</p>
+    {% highlight html %}npm install ryoko-headers --save{% endhighlight %}
+    <h3>scss</h3>
+    <p>And to your scss builder.</p>
+    {% highlight sass %}@include "ryoko-headers/scss/ryoko"{% endhighlight %}
 </div>

@@ -1,15 +1,27 @@
 .ryoko {
+  align-items: stretch;
   background-color: $ryoko-background;
-  background-size: cover;
   background-position: center;
+  background-size: cover;
+  display: flex;
   min-height: $ryoko-default-height;
+  position: relative;
+}
+
+.ryoko-shade {
+  background-color: $ryoko-default-shade;
+  width: 100%;
+}
+
+.ryoko-body {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
 }
 
 .ryoko-faded {
-  background: $ryoko-faded-background;
+  background-color: $ryoko-faded-background;
 }
 
 .ryoko-shadow {
@@ -24,4 +36,4 @@
   }
 }
 
-@include make-ryoko-sizes();
+@include make-ryoko-sizes;

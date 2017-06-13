@@ -1,9 +1,10 @@
 const gulp = require('gulp')
-const sass = require('gulp-sass');
-const sourcemaps = require('gulp-sourcemaps');
-const postcss = require('gulp-postcss');
-const autoprefixer = require('autoprefixer');
+const sass = require('gulp-sass')
+const sourcemaps = require('gulp-sourcemaps')
+const postcss = require('gulp-postcss')
+const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
+const sassLint = require('gulp-sass-lint')
 
 gulp.task('css', function () {
   const processors = [
@@ -41,6 +42,13 @@ gulp.task('jekyll', function () {
 
 gulp.task('watch', function () {
   gulp.watch('./scss/**/*.scss', ['css'])
+})
+
+gulp.task('sass-lint', function () {
+  return gulp.src('scss/**/*.s+(a|c)ss')
+    .pipe(sassLint())
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
 })
 
 gulp.task('bootstrap-css', function () {

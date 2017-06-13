@@ -1,7 +1,7 @@
 {
   "name": "ryoko-headers",
-  "version": "0.1.1",
-  "description": "Simple admin template using wonderful styles",
+  "version": "0.1.2",
+  "description": "Simple headers using wonderful styles",
   "main": "index.js",
   "scripts": {
     "dev": "gulp",
@@ -19,6 +19,7 @@
     "gulp": "^3.9.1",
     "gulp-postcss": "^7.0.0",
     "gulp-sass": "^3.1.0",
+    "gulp-sass-lint": "^1.3.2",
     "gulp-sourcemaps": "^2.6.0",
     "gulp-util": "^3.0.8"
   },
