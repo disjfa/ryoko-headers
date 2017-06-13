@@ -42,5 +42,5 @@ This project follows the [all-contributors](https://github.com/kentcdodds/all-co
 [github-watch]: https://github.com/disjfa/ryoko-headers/watchers
 [github-star-badge]: https://img.shields.io/github/stars/disjfa/ryoko-headers.svg?style=social
 [github-star]: https://github.com/disjfa/ryoko-headers/stargazers
-[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20ryoko-headers!%20-%20Cool%20admin%20template!%20Thanks%20@disjfa%20https://github.com/disjfa/ryoko-headers%20%F0%9F%A4%97
+[twitter]: https://twitter.com/intent/tweet?text=Check%20out%20ryoko-headers!%20-%20Cool%20css%20headers!%20Thanks%20@disjfa%20https://github.com/disjfa/ryoko-headers%20%F0%9F%A4%97
 [twitter-badge]: https://img.shields.io/twitter/url/https/github.com/disjfa/ryoko-headers.svg?style=social
