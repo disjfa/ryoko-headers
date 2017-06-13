@@ -9,8 +9,7 @@
 }
 
 .ryoko-shade {
-  background-color: $ryoko-default-shade;
-  width: 100%;
+  background-color: rgba($ryoko-black, $ryoko-default-shade);
 }
 
 .ryoko-body {
@@ -37,3 +36,13 @@
 }
 
 @include make-ryoko-sizes;
+
+@mixin make-ryoko-shade($shades: $ryoko-shades) {
+  @each $shade in map-keys($shades) {
+    .ryoko-shade-#{$shade*100} {
+      background-color: rgba($ryoko-black, $shade);
+    }
+  }
+}
+
+@include make-ryoko-shade;

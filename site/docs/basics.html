@@ -1,0 +1,68 @@
+---
+layout: bootstrap
+title: Basics
+permalink: /docs/basics/
+group: docs
+order: 1
+---
+
+<div class="ryoko" style="background-image: url(https://images.unsplash.com/photo-1483817101829-339b08e8d83f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=800&fit=crop&s=2f0d1fe052d96c9eaeb226f7af168070)">
+    <div class="ryoko-body">
+        <div class="ryoko-faded ryoko-shadow text-white px-3 py-3 my-3">
+            <h3>Getting started</h3>
+            <p>Add these headers to my site please!</p>
+        </div>
+    </div>
+</div>
+<div class="container py-3">
+    <h1>Your first header</h1>
+    <p>Setting up is easy, just add a couple of lines of html:</p>
+</div>
+
+{% include_relative basics_first.html %}
+<div class="container py-3">
+    <h3>Code</h3>
+    {% highlight html %}{% include_relative basics_first.html %}{% endhighlight %}
+    <h3>The basics</h3>
+    <p>
+        Here we just have the basics. A class <code>.ryoko</code> and a child with a class <code>.ryoko-body</code>.
+        This sets up the main elements of a ryoko header. This sets up a header with a basic size and adds the content in the center.
+        In this example i added a <code>.ryoko-10</code> class just so it wont take a large part of the screen. You can check sizes on the <a href="{{ "/sizing/" | prepend: site.baseurl }}">sizing</a> page.
+    </p>
+</div>
+{% include_relative basics_image.html %}
+<div class="container py-3">
+    <h3>Code</h3>
+    {% highlight html %}{% include_relative basics_image.html %}{% endhighlight %}
+    <h3>Add an image</h3>
+    <p>
+        Next we just have to add a background-image on the <code>.ryoko</code>. Thats it, cool.
+        I did add some helper classes so we can read some text. <code>.ryoko-faded</code> to add a faded background. And <code>.text-white</code>, a <a href="http://getbootstrap.com/">bootstrap</a> class, for the white text.
+        <code>.px-3</code> <code>.py-3</code> <code>.my-3</code> for some margins and paddings, also <a href="http://getbootstrap.com/">bootstrap</a>.
+    </p>
+</div>
+{% include_relative basics_shadow.html %}
+<div class="container py-3">
+    <h3>Code</h3>
+    {% highlight html %}{% include_relative basics_shadow.html %}{% endhighlight %}
+    <h3>Add an shadow</h3>
+    <p>
+        Add a shadow on the content using <code>.ryoko-shadow</code> on the element that uses <code>.ryoko-faded</code>. Lets keep things easy.
+    </p>
+</div>
+{% include_relative basics_shade.html %}
+<div class="container py-3">
+    <h3>Code</h3>
+    {% highlight html %}{% include_relative basics_shade.html %}{% endhighlight %}
+    <h3>Shades</h3>
+    <p>
+        Got a light image, add a shade. Add a <code>.ryoko-shade</code> on the <code>.ryoko-body</code> element to add a shader.
+        You can also use <code>.ryoko-shade-10</code> <code>.ryoko-shade-20</code> until <code>.ryoko-shade-100</code> for 10% black overlay to 100% black overlay (aka black).
+    </p>
+</div>
+<div class="container py-3">
+    <h3>More</h3>
+    <ul>
+        {% include list.html group=page.group %}
+    </ul>
+</div>

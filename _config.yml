@@ -18,7 +18,8 @@ email: disjfa@disjfa.nl
 description: Create awesome headers only using css.
 baseurl: "/ryoko-headers" # the subpath of your site, e.g. /blog
 url: "https://disjfa.github.io/ryoko-headers" # the base hostname & protocol for your site, e.g. http://example.com
-github_url:  https://disjfa.github.io/
+github_url:  https://github.com/disjfa/ryoko-headers
+github_base: /tree/master/site/
 
 # Google
 google_analytics: UA-83598448-1

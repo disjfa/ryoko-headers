@@ -12,8 +12,7 @@
   position: relative; }
 
 .ryoko-shade {
-  background-color: rgba(0, 0, 0, 0.4);
-  width: 100%; }
+  background-color: rgba(0, 0, 0, 0.4); }
 
 .ryoko-body {
   -webkit-box-align: center;
@@ -63,5 +62,35 @@
 
 .ryoko-100 {
   min-height: 100vmin; }
+
+.ryoko-shade-10 {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+.ryoko-shade-20 {
+  background-color: rgba(0, 0, 0, 0.2); }
+
+.ryoko-shade-30 {
+  background-color: rgba(0, 0, 0, 0.3); }
+
+.ryoko-shade-40 {
+  background-color: rgba(0, 0, 0, 0.4); }
+
+.ryoko-shade-50 {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+.ryoko-shade-60 {
+  background-color: rgba(0, 0, 0, 0.6); }
+
+.ryoko-shade-70 {
+  background-color: rgba(0, 0, 0, 0.7); }
+
+.ryoko-shade-80 {
+  background-color: rgba(0, 0, 0, 0.8); }
+
+.ryoko-shade-90 {
+  background-color: rgba(0, 0, 0, 0.9); }
+
+.ryoko-shade-100 {
+  background-color: black; }
 
 /*# sourceMappingURL=ryoko.css.map */

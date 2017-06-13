@@ -34,9 +34,10 @@
     </div>
     <main class="mdl-layout__content">
         {{ content }}
+        {% include footer.html %}
     </main>
 </div>
-{% include footer.html %}
+
 <script src="{{ "/js/material.min.js" | prepend: site.baseurl }}"></script>
 </body>
 </html>

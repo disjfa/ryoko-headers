@@ -31,9 +31,7 @@ const jekyllLogger = function (buffer) {
 
 gulp.task('jekyll', function () {
   const jekyll = child.spawn('jekyll', ['serve',
-    '--watch',
-    '--incremental',
-    '--drafts'
+    '--watch'
   ])
 
   jekyll.stdout.on('data', jekyllLogger)
