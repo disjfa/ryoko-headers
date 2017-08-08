@@ -15,6 +15,7 @@
   background-color: rgba(0, 0, 0, 0.4); }
 
 .ryoko-body {
+  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -24,7 +25,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%; }
+  width: 100%;
+  min-height: 40vmin; }
 
 .ryoko-faded {
   background-color: rgba(0, 0, 0, 0.5); }
@@ -35,33 +37,53 @@
 
 .ryoko-10 {
   min-height: 10vmin; }
+  .ryoko-10 .ryoko-body {
+    min-height: 10vmin; }
 
 .ryoko-20 {
   min-height: 20vmin; }
+  .ryoko-20 .ryoko-body {
+    min-height: 20vmin; }
 
 .ryoko-30 {
   min-height: 30vmin; }
+  .ryoko-30 .ryoko-body {
+    min-height: 30vmin; }
 
 .ryoko-40 {
   min-height: 40vmin; }
+  .ryoko-40 .ryoko-body {
+    min-height: 40vmin; }
 
 .ryoko-50 {
   min-height: 50vmin; }
+  .ryoko-50 .ryoko-body {
+    min-height: 50vmin; }
 
 .ryoko-60 {
   min-height: 60vmin; }
+  .ryoko-60 .ryoko-body {
+    min-height: 60vmin; }
 
 .ryoko-70 {
   min-height: 70vmin; }
+  .ryoko-70 .ryoko-body {
+    min-height: 70vmin; }
 
 .ryoko-80 {
   min-height: 80vmin; }
+  .ryoko-80 .ryoko-body {
+    min-height: 80vmin; }
 
 .ryoko-90 {
   min-height: 90vmin; }
+  .ryoko-90 .ryoko-body {
+    min-height: 90vmin; }
 
 .ryoko-100 {
   min-height: 100vmin; }
+  .ryoko-100 .ryoko-body {
+    min-height: 100vmin; }
 
 .ryoko-shade-10 {
   background-color: rgba(0, 0, 0, 0.1); }

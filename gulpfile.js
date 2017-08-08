@@ -3,7 +3,6 @@ const sass = require('gulp-sass')
 const sourcemaps = require('gulp-sourcemaps')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
-const cssnano = require('cssnano')
 const sassLint = require('gulp-sass-lint')
 
 gulp.task('css', function () {

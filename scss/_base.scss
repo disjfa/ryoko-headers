@@ -13,10 +13,12 @@
 }
 
 .ryoko-body {
+  position: relative;
   align-items: center;
   display: flex;
   justify-content: center;
   width: 100%;
+  min-height: $ryoko-default-height;
 }
 
 .ryoko-faded {
@@ -31,6 +33,9 @@
   @each $size in map-keys($sizes) {
     .ryoko-#{$size} {
       min-height: #{$size}vmin;
+      .ryoko-body {
+        min-height: #{$size}vmin;
+      }
     }
   }
 }
