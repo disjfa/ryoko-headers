@@ -1,13 +1,7 @@
 .ryoko {
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
   background-color: #bdc3c7;
   background-position: center;
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   min-height: 40vmin;
   position: relative; }
 
@@ -19,14 +13,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
   min-height: 40vmin; }
+  .ryoko-body > .container {
+    margin: 0; }
 
 .ryoko-faded {
   background-color: rgba(0, 0, 0, 0.5); }

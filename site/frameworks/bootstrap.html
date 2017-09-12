@@ -12,13 +12,57 @@ group: frameworks
         </h1>
     </div>
 </div>
+
 <div class="container py-3">
     <p class="lead">
-        Just an example using <a href="http://getbootstrap.com/">bootstrap css</a>. We did play around and added a container and jumbotron this time.
+        Just an example using <a href="http://getbootstrap.com/">bootstrap css</a>. We did play around and added a
+        container and jumbotron this time.
     </p>
     <h3 class="subtitle">Code</h3>
     {% highlight html %}{% include_relative bootstrap_example.html %}{% endhighlight %}
+</div>
 
+
+<div class="ryoko"
+     style="background-image: url(https://images.unsplash.com/photo-1446413407776-763bd743ae47?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1200&h=800&fit=crop&s=116c38dd55a30ae98c3c653a0434b5b8)">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div class="ryoko-body">
+        <div class="container">
+            <div class="jumbotron ryoko-faded text-white">
+                <h1>Ryoko headers</h1>
+                <p class="lead">Just create awesome headers.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container py-3">
     <h3 class="subtitle">Check out other frameworks</h3>
     <ul>
         {% include list.html group=page.group %}
